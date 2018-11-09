@@ -2,5 +2,5 @@
 
 Directory:
 
-1. `algorithm` - The python implementation of famous algorithms.
+1. `algorithm` - The python implementation of some famous algorithms.
 2. `exam` - NLP Course exam code
