@@ -4,12 +4,12 @@
 
 1. `0-exam` - NLP Course exam code
 2. `algorithm` - The python implementation of some famous algorithms.
-    1. [lru](algorithm/lru.py) - Least recently used algorithm
-    2. [ngram](algorithm/ngram.py) - n-gram language model
-    3. [search](algorithm/search.py) - BFS/DFS search algorithm implementation
+    * [lru](algorithm/lru.py) - Least recently used algorithm
+    * [ngram](algorithm/ngram.py) - n-gram language model
+    * [search](algorithm/search.py) - BFS/DFS search algorithm implementation
 3. `data` - Dataset
 4. `notebooks` - Pratise jupyter notebooks
-    1. [Linear regression](notebooks/linear-regression.ipynb) - LR practise notebook
+    * [Linear regression](notebooks/linear-regression.ipynb) - LR practise notebook
 
 ### Week-1
 
