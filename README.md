@@ -10,6 +10,7 @@
 3. `data` - Dataset
 4. `notebooks` - Pratise jupyter notebooks
     1. [Linear regression](notebooks/linear-regression.ipynb) - LR practise notebook
+5. `lisp` - Some algorithm and practice codes written with Common LISP
 
 ### Week-1
 
