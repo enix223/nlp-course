@@ -183,12 +183,12 @@ if __name__ == '__main__':
     get_one_word_probability = get_one_word_prob(corpus)
     unigram_model_fn = partial(unigram_model, prob_fn=get_one_word_probability)
 
-    pair = ('前天晚上吃晚饭的时候', '前天晚上吃早饭的时候')
+    pair1 = ('前天晚上吃晚饭的时候', '前天晚上吃早饭的时候')
     pair2 = ('正是一个好看的小猫', '真是一个好看的小猫')
     pair3 = ('我无言以对，简直', '我简直无言以对')
 
     print('============= Unigram =============')
-    calculate_pair_prob(pair, unigram_model_fn)
+    calculate_pair_prob(pair1, unigram_model_fn)
     calculate_pair_prob(pair2, unigram_model_fn)
     calculate_pair_prob(pair3, unigram_model_fn)
 
@@ -201,7 +201,7 @@ if __name__ == '__main__':
         two_words_prob_fn=get_two_words_probability,
     )
 
-    calculate_pair_prob(pair, bigram_model_fn)
+    calculate_pair_prob(pair1, bigram_model_fn)
     calculate_pair_prob(pair2, bigram_model_fn)
     calculate_pair_prob(pair3, bigram_model_fn)
 
@@ -215,6 +215,6 @@ if __name__ == '__main__':
         three_words_prob_fn=get_three_words_probability,
     )
 
-    calculate_pair_prob(pair, trigram_model_fn)
+    calculate_pair_prob(pair1, trigram_model_fn)
     calculate_pair_prob(pair2, trigram_model_fn)
     calculate_pair_prob(pair3, trigram_model_fn)
