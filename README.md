@@ -8,8 +8,14 @@
     * [ngram](algorithm/ngram.py) - n-gram language model
     * [search](algorithm/search.py) - BFS/DFS search algorithm implementation
 3. `data` - Dataset
+    * [80k news corpus](data/corpus/80k.tar.gz) - 80k news corpus
+    * [Cities coordinate dataset](data/geo/cities.json) - China cities coordinate dataset
+    * [titanic dataset](data/titanic/)
 4. `notebooks` - Pratise jupyter notebooks
     * [Linear regression](notebooks/linear-regression.ipynb) - LR practise notebook
+    * [Dynamic programming](notebooks/dynamic_programming.ipynb) - Dynamic programming notebook
+    * [Metro exchange](notebooks/metro.ipynb) - Metro exchange notebook
+    * [A* algorithm](notebooks/a_star.ipynb) - A star algorithm notebook
 5. `lisp` - Some algorithm and practice codes written with Common LISP
     * [paip-ex1.lisp](lisp/paip-ex1.lisp) - PAIP book chapter 1 exams
     * [tower.lisp](lisp/tower.lisp) - The tower of Hanoi problem from `Concrete mathematic` book
