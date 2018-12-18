@@ -51,6 +51,7 @@
 
 1. [Rod cutting](algorithm/rod_cutting.py)
 2. [edit distance](algorithm/edit_distance.py)
+3. [VRP](algorithm/vrp.py)
 
 ### Week-5 Word2Vec
 
