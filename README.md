@@ -51,7 +51,9 @@
 
 1. [Rod cutting](algorithm/rod_cutting.py)
 2. [edit distance](algorithm/edit_distance.py)
-3. [VRP](algorithm/vrp.py)
+3. [VRP](algorithm/vrp.py)    
+Example solution for dataset [cities](data/vrp/cities.txt)
+![VRP solution](data/vrp/vrp-solution.png)
 
 ### Week-5 Word2Vec
 
