@@ -85,6 +85,7 @@ def tokenize_corpus_task(source):
             i = 0
             for p in workers:
                 p.join()
+            workers = []
 
     logger.info('Tokenize done')
 
