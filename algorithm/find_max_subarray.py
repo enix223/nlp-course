@@ -103,6 +103,21 @@ def find_max_subarray_with_exhaustion_search(arr):
     return lft, rgh, totalsum
 
 
+@benchmark
+def find_max_subarray_with_shortest_path(arr):
+    pass
+
+
+@benchmark
+def find_max_subarray_with_dynamic_programming(arr):
+    pass
+
+
+@benchmark
+def find_max_subarray_with_kadane_algorithm(arr):
+    pass
+
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument(

@@ -119,3 +119,6 @@ dmypy.json
 # VS code
 .vscode/
 *.code-workspace
+
+data/corpus
+data/ltp_data_v3.4.0

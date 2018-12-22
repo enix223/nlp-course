@@ -1,0 +1,3 @@
+[submodule "vendor/pyltp"]
+	path = vendor/pyltp
+	url = git@github.com:HIT-SCIR/pyltp.git
