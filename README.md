@@ -60,4 +60,4 @@ Example solution for dataset [cities](data/vrp/cities.txt)
 1. [Wiki word2vec train](project/wiki_word2vec/train.py)
 
 ### Week-6 News option extraction
-1. [News option extraction model prototyp](notebooks/news_options.ipynb) NOT Complete yet!!
+1. [News option extraction model prototype](notebooks/news_options.ipynb) NOT Complete yet!!
