@@ -27,6 +27,10 @@
         * [metro_exchange.py](project/metro_exchange/metro_exchange.py) - Metro exchange A* algorithm
     * wiki_word2vec
         * [train.py](project/wiki_word2vec/train.py) - Zh-wiki Word2Vec model trainning program
+    * news_option_extraction
+        * [cut_news.py](project/news_option_extraction/cut_news.py) - Cut the news corpus into word tokens
+        * [train.py](project/news_option_extraction/train.py) - Train news corpus with word2vec
+        * [extraction.py](project/news_option_extraction/extraction.py) - Extract people options from the news corpus, and save the results into csv
 
 ### Week-1 Graph search
 
@@ -60,4 +64,5 @@ Example solution for dataset [cities](data/vrp/cities.txt)
 1. [Wiki word2vec train](project/wiki_word2vec/train.py)
 
 ### Week-6 News option extraction
-1. [News option extraction model prototype](notebooks/news_options.ipynb) NOT Complete yet!!
+1. [News option extraction model notebook](notebooks/news_options.ipynb)
+2. [News option extraction model](project/news_option_extraction) - Need further optimize
