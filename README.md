@@ -12,6 +12,7 @@
     * [Cities coordinate dataset](data/geo/cities.json) - China cities coordinate dataset
     * [titanic dataset](data/titanic/)
     * [zhwiki](data/zhwiki) - Zh wiki sample dataset
+    * [chinese-novels](data/chinese-novels) - 中国古典小说，包括四大名著
 4. `notebooks` - Pratise jupyter notebooks
     * [Linear regression](notebooks/linear-regression.ipynb) - LR practise notebook
     * [Dynamic programming](notebooks/dynamic_programming.ipynb) - Dynamic programming notebook
