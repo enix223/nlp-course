@@ -66,3 +66,8 @@ Example solution for dataset [cities](data/vrp/cities.txt)
 ### Week-6 News option extraction
 1. [News option extraction model notebook](notebooks/news_options.ipynb)
 2. [News option extraction model](project/news_option_extraction) - Need further optimize
+
+### Week-7 Bool search and pagerank
+
+1. [Mini search engine notebook](notebooks/bool-search.ipynb)
+2. [Mini search engine for chinese famous novels](project/mini-search-engine/)

@@ -72,19 +72,21 @@ def download_chapter(name, link, out):
         out.write('\n\n')
 
 
-def download_book(name, link, out):
-    logger.info('Requesting book {}: {}...'.format(name, link))
+def download_book(book_name, link, outdir):
+    logger.info('Requesting book {}: {}...'.format(book_name, link))
     resp = requests.get(link)
     if resp.status_code != 200:
-        logger.error('Failed to download book: {}, code: {}, err: {}'.format(name, resp.status_code, resp.text))
+        logger.error('Failed to download book: {}, code: {}, err: {}'.format(book_name, resp.status_code, resp.text))
         return
 
     html = BeautifulSoup(resp.text, 'html.parser')
     chapters = html.select('.book-mulu li a')
 
     for chapter in chapters:
-        name, link = chapter.text, '{}{}'.format(domain, chapter['href'])
-        download_chapter(name, link, out)
+        filename = os.path.join(outdir, '{}-{}.txt'.format(book_name, chapter.text.replace(' ', '')))
+        with open(filename, 'w') as out:
+            name, link = chapter.text, '{}{}'.format(domain, chapter['href'])
+            download_chapter(name, link, out)
 
 
 if __name__ == '__main__':
@@ -125,8 +127,7 @@ if __name__ == '__main__':
 
             if i >= args.skip:
                 book_link = '{}{}'.format(domain, href['href'])
-                with open(os.path.join(args.outpath, '{}.txt'.format(book_name)), 'w') as out:
-                    download_book(book_name, book_link, out)
+                download_book(book_name, book_link, args.outpath)
 
                 success += 1
                 if args.stop > 0 and success >= args.stop:
