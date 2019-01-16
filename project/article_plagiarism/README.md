@@ -24,7 +24,7 @@ Given an article, try to classify its source, with two class: `Published by Xinh
 
 5. Compare the models' precision from step 4, and choose the best model as the final model
 
-### In each phrase, what’s your excepted, what’s the output?
+### 3. In each phrase, what’s your excepted, what’s the output?
 
 * For step 1, the expected output should be a dataframe excluding records with `NaN` source
 * For step 2, the expected output should be two dataframes, training set dataframe and test set dataframe
