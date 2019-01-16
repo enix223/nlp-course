@@ -21,14 +21,14 @@ Example
 ------
 
 # Download all books in the catalog, and keep the data in current dir
->>> python crawler_china_classic_novels.py .
+$ python crawler_china_classic_novels.py .
 
 # Skip 1 book, and download 1 book, and keep the data in current dir
->>> python crawler_china_classic_novels.py . --stop 1 --skip 1
+$ python crawler_china_classic_novels.py . --stop 1 --skip 1
 
 # Skip 1 book, and download 5 book, and insert a 5 sec sleep step between each book,
 # and keep the data in current dir
->>> python crawler_china_classic_novels.py . --stop 5 --skip 1 --wait 5
+$ python crawler_china_classic_novels.py . --stop 5 --skip 1 --wait 5
 
 ==============================================
 """

@@ -1,6 +1,7 @@
 # NLP Course
 
-### Directory:
+## Catalog
+----
 
 1. `0-exam` - NLP Course exam code
 2. `algorithm` - The python implementation of some famous algorithms.
@@ -32,6 +33,12 @@
         * [cut_news.py](project/news_option_extraction/cut_news.py) - Cut the news corpus into word tokens
         * [train.py](project/news_option_extraction/train.py) - Train news corpus with word2vec
         * [extraction.py](project/news_option_extraction/extraction.py) - Extract people options from the news corpus, and save the results into csv
+    * mini search engine
+        * [crawler_chinese_classic_novels.py](project/mini-search-engine/crawler_chinese_classic_novels.py) - Crawl novels from website
+        * [bool_search.py](project/mini-search-engine/bool_search.py) - Use bool search to search keywords in Chinese novels
+
+## Course
+----
 
 ### Week-1 Graph search
 
@@ -56,9 +63,7 @@
 
 1. [Rod cutting](algorithm/rod_cutting.py)
 2. [edit distance](algorithm/edit_distance.py)
-3. [VRP](algorithm/vrp.py)    
-Example solution for dataset [cities](data/vrp/cities.txt)
-![VRP solution](data/vrp/vrp-solution.png)
+3. [VRP](project/vrp-problem/vrp.py)
 
 ### Week-5 Word2Vec
 

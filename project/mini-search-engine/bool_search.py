@@ -18,7 +18,7 @@ Documents contain w1 and w2 = A[w1] & A[w2]
 Usage
 ------------
 
->>> python bool_search.py ../../data/chinese-novels/ '刺史 京城'
+$ python bool_search.py ../../data/chinese-novels/ '刺史 京城'
 """
 
 from sklearn.feature_extraction.text import TfidfVectorizer
