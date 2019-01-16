@@ -22,7 +22,7 @@ Given an article, try to classify its source, with two class: `Published by Xinh
     * Use `XGBoost` to train the above training set. And use test set to test the model.
     * Use `K-means` to train the above training set. And use test set to test the model.
 
-5. Compare the models' precision from step 2.4, and choose the best model as the final model
+5. Compare the models' precision from step 4, and choose the best model as the final model
 
 ### In each phrase, what’s your excepted, what’s the output?
 
