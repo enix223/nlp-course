@@ -23,9 +23,9 @@ Hash Linked List is a structure combining Hash table with double linked list.
 Access Time early --------->  Access time recently
 
 +------+    +------+    +------+    +------+
-| Key1 |<---| Key2 |--->| Key3 |--->| Key4 |
+| Key1 |--->| Key2 |--->| Key3 |--->| Key4 |
 +------+    +------+    +------+    +------+
-| Val1 |--->| Val2 |<---| Val3 |<---| Val4 |
+| Val1 |--->| Val2 |--->| Val3 |<---| Val4 |
 +------+    +------+    +------+    +------+
 
 The LRU algorithm describe as below:
@@ -36,9 +36,9 @@ insert it back to the end of the list, so the Hash linked list would look
 like this now:
 
 +------+    +------+    +------+    +------+
-| Key1 |<---| Key3 |--->| Key4 |--->| Key2 |
+| Key1 |--->| Key3 |--->| Key4 |--->| Key2 |
 +------+    +------+    +------+    +------+
-| Val1 |--->| Val3 |<---| Val4 |<---| Val2 |
+| Val1 |--->| Val3 |--->| Val4 |--->| Val2 |
 +------+    +------+    +------+    +------+
 
 2. Suppose the key is not in the hash linked list, we need to insert the new
@@ -49,9 +49,9 @@ key-value pair (Key5, Val5), and suppose our list limit is equal to 4:
 Hash linked list after (Key5, Val5) being inserted:
 
 +------+    +------+    +------+    +------+    +------+
-| Key1 |<---| Key3 |--->| Key4 |--->| Key2 |--->| Key5 |
+| Key1 |--->| Key3 |--->| Key4 |--->| Key2 |--->| Key5 |
 +------+    +------+    +------+    +------+    +------+
-| Val1 |--->| Val3 |<---| Val4 |<---| Val2 |<---| Val5 |
+| Val1 |--->| Val3 |--->| Val4 |--->| Val2 |--->| Val5 |
 +------+    +------+    +------+    +------+    +------+
 
 And we need to remove the left most node from the list to keep the list size
@@ -60,7 +60,7 @@ not excceeding the list limit:
 +------+    +------+    +------+    +------+
 | Key3 |--->| Key4 |--->| Key2 |--->| Key5 |
 +------+    +------+    +------+    +------+
-| Val3 |<---| Val4 |<---| Val2 |<---| Val5 |
+| Val3 |--->| Val4 |--->| Val2 |--->| Val5 |
 +------+    +------+    +------+    +------+
 """
 
