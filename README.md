@@ -77,3 +77,13 @@
 
 1. [Mini search engine notebook](notebooks/bool-search.ipynb)
 2. [Mini search engine for chinese famous novels](project/mini-search-engine/)
+
+### Week-8 Bias/Variance/Overfitting/Recall/Precision
+
+### Week-9 Linear regression/Logistic regression/SVM
+
+### Week-11 SVM/decision tree/XGBoost/Clustering
+
+1. [Article plagiarism](project/article_plagiarism)
+
+### Week-12 K-means/Word2Vec/Embedding/Hiearchy softmax
