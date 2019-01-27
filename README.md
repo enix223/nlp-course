@@ -85,5 +85,6 @@
 ### Week-11 SVM/decision tree/XGBoost/Clustering
 
 1. [Article plagiarism](project/article_plagiarism)
+2. [Article plagiarism notebook](notebooks/article-plagiarism.ipynb)
 
 ### Week-12 K-means/Word2Vec/Embedding/Hiearchy softmax

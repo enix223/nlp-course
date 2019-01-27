@@ -16,7 +16,7 @@ $ python text_features_tfidf.py \
 """
 
 from sklearn.feature_extraction.text import TfidfVectorizer
-from .text_features_base import BaseTextFeatureExtractor
+from text_features_base import BaseTextFeatureExtractor
 import pandas as pd
 import pickle
 

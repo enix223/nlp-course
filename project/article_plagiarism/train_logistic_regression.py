@@ -16,12 +16,14 @@ $ python train_logistic_regression.py \
     ./train.features.pkl \
     ./test.features.pkl \
     ./train.label.pkl \
-    ./test.label.pkl
+    ./test.label.pkl \
+    ./model.logistic_regression.pkl
 """
 
 from sklearn.linear_model import LogisticRegression
 from train_base import BaseTrainModel
 import pandas as pd
+import pickle
 
 
 class LogisticRegressionModel(BaseTrainModel):
@@ -29,7 +31,7 @@ class LogisticRegressionModel(BaseTrainModel):
 
     """Train and cross validate with Logistic regression model
     """
-    def train(train_set: pd.DataFrame, train_label: pd.Series, args):
+    def train(self, train_set: pd.DataFrame, train_label: pd.Series, args):
         """Train with logistic regression model
         :param train_set pd.DataFrame The vectorized training dataset
         :param train_label pd.Series The training set label
@@ -48,6 +50,14 @@ class LogisticRegressionModel(BaseTrainModel):
         """
         score = model.score(test_set, test_label)
         self.logger.info('Test set score: %.2f' % score)
+
+    def save(self, model, outpath):
+        """Save the model as pickle format to outpath
+        :param model The LR model
+        :param outpath The model output path
+        """
+        with open(outpath, 'wb') as f:
+            pickle.dump(model, f)
 
 
 if __name__ == '__main__':

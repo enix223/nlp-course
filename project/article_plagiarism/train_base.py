@@ -38,19 +38,23 @@ class BaseTrainModel(object):
     def test(self, model, test_set: pd.DataFrame, test_label: pd.Series, args):
         raise NotImplementedError
 
+    def save(self, model, outpath):
+        raise NotImplementedError
+
     def parse_arguments(self):
         parser = argparse.ArgumentParser()
         parser.add_argument('trainvec', type=str, help='Training set vectors')
         parser.add_argument('testvec', type=str, help='Test set vectors')
         parser.add_argument('trainlabel', type=str, help='Training set label output file path')
         parser.add_argument('testlabel', type=str, help='Test set label output file path')
+        parser.add_argument('modelpath', type=str, help='Model output file path')
         self.add_arguments(parser)
         args = parser.parse_args(sys.argv[1:])
         return args
 
     def run(self):
         args = self.parse_arguments()
-        total_steps = 6
+        total_steps = 7
 
         self.logger.info('[1/%d] Loading train vectorized dataset...' % total_steps)
         train_set = self.load_dataset(args.trainvec)
@@ -69,5 +73,8 @@ class BaseTrainModel(object):
 
         self.logger.info('[6/%d] Test model with test set...' % total_steps)
         self.test(model, test_set, test_labels, args)
+
+        self.logger.info('[7/%d] Saving model to pickle file...' % total_steps)
+        self.save(model, args.modelpath)
 
         self.logger.info('DONE')

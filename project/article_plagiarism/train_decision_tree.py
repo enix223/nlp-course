@@ -16,13 +16,15 @@ $ python train_decision_tree.py \
     ./train.features.pkl \
     ./test.features.pkl \
     ./train.label.pkl \
-    ./test.label.pkl
+    ./test.label.pkl \
+    ./model.decision_tree.pkl
 """
 from sklearn import tree
 
 from train_base import BaseTrainModel
 import pandas as pd
 import numpy as np
+import pickle
 
 
 class DecisionTreeModel(BaseTrainModel):
@@ -49,6 +51,14 @@ class DecisionTreeModel(BaseTrainModel):
         test_predict = model.predict(test_set)
         score = np.where(test_predict == test_label)[0].shape[0] / test_label.shape[0]
         self.logger.info('Test set score: %.2f' % score)
+
+    def save(self, model, outpath):
+        """Save the model as pickle format to outpath
+        :param model The LR model
+        :param outpath The model output path
+        """
+        with open(outpath, 'wb') as f:
+            pickle.dump(model, f)
 
 
 if __name__ == '__main__':

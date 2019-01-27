@@ -15,7 +15,7 @@ $ python text_features_countvec.py \
 """
 
 from sklearn.feature_extraction.text import CountVectorizer
-from .text_features_base import BaseTextFeatureExtractor
+from text_features_base import BaseTextFeatureExtractor
 import pandas as pd
 import pickle
 

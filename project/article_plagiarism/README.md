@@ -125,14 +125,15 @@ Algorithms used in this project:
 
 Usage
 
-* `Logistic Regression`
+* Logistic Regression
 
     ```
     python train_logistic_regression.py \
         ./train.features.pkl \
         ./test.features.pkl \
         ./train.label.pkl \
-        ./test.label.pkl
+        ./test.label.pkl \
+        ./model.logistic_regression.pkl
     ```
 
     Output:
@@ -147,14 +148,15 @@ Usage
     2019-01-26 17:36:38,268 [INFO]: DONE
     ```
 
-* `SVM`
+* SVM
 
     ```
     python train_svm.py \
         ./train.features.pkl \
         ./test.features.pkl \
         ./train.label.pkl \
-        ./test.label.pkl
+        ./test.label.pkl \
+        ./model.svm.pkl
     ```
 
     Output:
@@ -176,7 +178,8 @@ Usage
         ./train.features.pkl \
         ./test.features.pkl \
         ./train.label.pkl \
-        ./test.label.pkl
+        ./test.label.pkl \
+        ./model.decision_tree.pkl
     ```
 
     Output:
@@ -198,7 +201,8 @@ Usage
         ./train.features.pkl \
         ./test.features.pkl \
         ./train.label.pkl \
-        ./test.label.pkl
+        ./test.label.pkl \
+        ./model.random_forest.pkl
     ```
 
     Output:
@@ -212,6 +216,10 @@ Usage
     2019-01-26 21:04:03,121 [INFO]: Test set score: 0.91
     2019-01-26 21:04:03,121 [INFO]: DONE
     ```
+
+### 6. Test the above models with news from website
+
+[Please refer to the notebook for model predicting result](../..//notebooks/article-plagiarism.ipynb#Test-model-with-different-news-from-website)
 
 ## Reference
 
